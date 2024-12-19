@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+      <h2 class="header-1">Harsh Student Registration Application</h2>
+      <h3 class="header-2">Student Courses Registration</h3>
+      <form action="./reg" method="post">
+      <table class="table-1">
+           <tr>
+              <th>Student Name</th> 
+              <td> <input type="text" name="sname"/> </td>    
+           </tr>
+           <tr>
+              <th>Student Qualification</th> 
+              <td> 
+                 <input type="checkbox" name="squal" value="BSC"/>BSC
+                 <input type="checkbox" name="squal" value="BTech"/>BTech
+                 <input type="checkbox" name="squal" value="MTech"/>MTech
+                 <input type="checkbox" name="squal" value="PHD"/>PHD
+                 <input type="checkbox" name="squal" value="MCA"/>MCA
+              </td>    
+           </tr>
+           
+           <tr>
+              <th>Student Gender </th>
+              <td>
+              <input type="radio" name="sgender" value="Male"/>Male
+              <input type="radio" name="sgender" value="Female"/>Female
+              </td>
+           </tr>
+            <tr>
+              <th>Student Course </th>
+              <td>
+                    <select name="scourses" size="4" multiple="multiple" >
+                         
+                          <option value="C++">C++</option>
+                           <option value="C">C</option>
+                          <optgroup label="JAVA">
+                                  <option value="Core Java">Core Java</option>
+                                  <option value="Adv Java">Adv Java</option>
+                                  <option value="Hibernate">Hibernate</option>
+                                  <option value="Spring">Spring</option>
+                          </optgroup>
+                          
+                           <optgroup label=".NET">
+                                  <option value="C#.Net">C#.Net</option>
+                                  <option value="ASP.Net">ASP.Net</option>
+                                  <option value="MVC">MVC</option>
+                                  
+                          </optgroup>
+                         
+                         <optgroup label="PYTHON">
+                                  <option value="Core Python">Core Python</option>
+                                  <option value="Avd Python">Avd Python</option>
+                                  <option value="DJango">DJango</option>
+                        </optgroup>
+                    </select>
+              </td>
+           </tr>
+           
+           <tr>
+                   <th>Branch</th>
+                   <td>
+                        <select name="branch">
+                               <option value="Chennai">Chennai</option>
+                               <option value="Hyderabad">Hyderabad</option>
+                               <option value="Pune">Pune</option>
+                               <option value="Delhi">Delhi</option>
+                        </select>
+                   </td>
+            </tr>
+            
+            <tr>
+               <th>Student Address</th>
+               <td>
+                  <textarea rows="5" cols="20" name="saddr"></textarea>
+               </td>
+            
+            </tr>
+            
+            <tr>
+                    <td>
+                          <input type="submit"/>
+                    </td>
+            </tr>
+                
+           
+      
+      </table>
+         
+         
+       </form>
+</body>
+</html>
